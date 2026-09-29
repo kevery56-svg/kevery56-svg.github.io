@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Digal | Executive & Operations Support</title>
+  <meta name="description" content="Portfolio of Kevin Digal, an Executive Assistant and Operations Support professional with experience supporting Australian and U.S. businesses.">
+  <meta name="theme-color" content="#071a2d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071a2d'/%3E%3Cpath d='M18 16h7v13l12-13h9L32 31l15 17h-9L25 33v15h-7z' fill='%2328d7c0'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --navy:#071a2d;--navy-2:#0d2842;--ink:#13273b;--muted:#607386;
+      --teal:#18bfa9;--teal-2:#28d7c0;--blue:#2f78ff;--ice:#eef7f8;
+      --line:#dbe6eb;--paper:#ffffff;--soft:#f6f9fb;--shadow:0 24px 70px rgba(7,26,45,.12);
+      --radius:22px;--max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 "DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    img{max-width:100%;display:block}
+    .skip{position:absolute;left:-999px;top:12px;background:#fff;color:#000;padding:10px 14px;border-radius:8px;z-index:100}
+    .skip:focus{left:12px}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(219,230,235,.8)}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px;font:800 18px/1 "Manrope",sans-serif}
+    .mark{width:42px;height:42px;border-radius:13px;background:var(--navy);color:var(--teal-2);display:grid;place-items:center;font:800 15px/1 "Manrope",sans-serif;box-shadow:0 8px 25px rgba(7,26,45,.18)}
+    .nav-links{display:flex;align-items:center;gap:28px;color:#43596d;font-weight:600}
+    .nav-links a:hover,.nav-links a:focus{color:var(--teal)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .nav-cta,.button.primary{background:var(--teal);color:#03231f}
+    .nav-cta:hover,.button.primary:hover{background:var(--teal-2);transform:translateY(-1px)}
+    .button.secondary{border-color:rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.08)}
+    .button.secondary:hover{background:rgba(255,255,255,.14)}
+    .hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;min-height:650px;display:grid;align-items:center}
+    .hero-art{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,26,45,.98) 0%,rgba(7,26,45,.92) 39%,rgba(7,26,45,.24) 75%),url('assets/portfolio-hero.png') center/cover no-repeat;opacity:.96}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,rgba(7,26,45,.72))}
+    .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,680px) 1fr;gap:50px;align-items:center;padding:100px 0 92px}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:#90fff0;text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:700;margin:0 0 22px}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--teal-2)}
+    h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin:0;color:inherit}
+    h1{font-size:clamp(46px,6.5vw,82px);letter-spacing:-.055em;max-width:780px}
+    h1 span{color:var(--teal-2)}
+    .hero-copy{font-size:20px;line-height:1.6;color:#d7e5ef;max-width:650px;margin:26px 0 32px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-card{align-self:end;justify-self:end;width:250px;padding:24px;border:1px solid rgba(255,255,255,.18);background:rgba(5,23,40,.72);backdrop-filter:blur(10px);border-radius:20px;box-shadow:0 25px 60px rgba(0,0,0,.2)}
+    .hero-card .status{display:flex;align-items:center;gap:9px;color:#d7e5ef;font-size:14px;margin-bottom:20px}
+    .status-dot{width:9px;height:9px;border-radius:50%;background:var(--teal-2);box-shadow:0 0 0 6px rgba(40,215,192,.14)}
+    .hero-card strong{display:block;font:700 30px/1.1 "Manrope",sans-serif;color:#fff;margin-bottom:8px}
+    .hero-card p{margin:0;color:#9fb4c6}
+    .stats{position:relative;z-index:3;margin-top:-56px}
+    .stats-grid{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+    .stat{padding:28px 30px;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}
+    .stat b{font:800 28px/1 "Manrope",sans-serif;color:var(--navy)}
+    .stat span{display:block;margin-top:9px;color:var(--muted);font-size:14px}
+    section{padding:108px 0}
+    .section-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;margin-bottom:48px;align-items:start}
+    .kicker{color:var(--teal);font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+    h2{font-size:clamp(34px,4vw,54px);letter-spacing:-.045em;color:var(--navy)}
+    .lead{font-size:19px;color:var(--muted);margin:4px 0 0;max-width:680px}
+    .about{background:var(--soft)}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:26px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px}
+    .panel h3{font-size:23px;color:var(--navy);margin-bottom:15px}
+    .panel p{margin:0;color:var(--muted)}
+    .values{display:grid;gap:12px}
+    .value{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line)}
+    .value:last-child{border-bottom:0}
+    .value i{font-style:normal;width:34px;height:34px;border-radius:10px;background:var(--ice);color:#087d70;display:grid;place-items:center;font-weight:800;flex:0 0 auto}
+    .value b{display:block;color:var(--navy)}
+    .value span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+    .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .cap{border:1px solid var(--line);border-radius:18px;padding:28px;transition:.25s ease;background:#fff}
+    .cap:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(7,26,45,.1);border-color:#b9ddd9}
+    .cap-num{font:700 13px/1 "Manrope",sans-serif;color:var(--teal);letter-spacing:.12em;margin-bottom:34px}
+    .cap h3{font-size:20px;color:var(--navy);margin-bottom:10px}
+    .cap p{color:var(--muted);margin:0;font-size:15px}
+    .work{background:var(--navy);color:#fff}
+    .work h2{color:#fff}
+    .work .lead{color:#abc0d0}
+    .filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+    .filter{border:1px solid rgba(255,255,255,.19);background:transparent;color:#c7d8e5;border-radius:999px;padding:9px 15px;cursor:pointer;font-weight:600}
+    .filter.active,.filter:hover{background:var(--teal);color:#06221f;border-color:var(--teal)}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .project{background:#102d48;border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px;min-height:300px;display:flex;flex-direction:column;transition:.25s ease}
+    .project:hover{transform:translateY(-4px);border-color:rgba(40,215,192,.45)}
+    .project.hidden{display:none}
+    .project-top{display:flex;justify-content:space-between;gap:20px;color:#83a2b9;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+    .project h3{font-size:25px;margin:34px 0 12px}
+    .project p{color:#b8cad7;margin:0}
+    .project footer{margin-top:auto;padding-top:28px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;font-weight:700;color:#aef6ec;background:rgba(24,191,169,.11);border:1px solid rgba(40,215,192,.18);padding:7px 10px;border-radius:999px}
+    .samples{margin-top:52px;padding-top:42px;border-top:1px solid rgba(255,255,255,.12)}
+    .samples-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:22px}
+    .samples-head h3{font-size:25px}
+    .samples-head p{margin:0;color:#9fb6c8;max-width:560px}
+    .file-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .file-card{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;background:#0b253d;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px;transition:.25s ease}
+    .file-card:hover{transform:translateY(-3px);border-color:rgba(40,215,192,.48);background:#102f4b}
+    .file-icon{width:54px;height:54px;border-radius:14px;background:rgba(40,215,192,.12);border:1px solid rgba(40,215,192,.22);color:#aef6ec;display:grid;place-items:center;font:800 12px/1 "Manrope",sans-serif;letter-spacing:.07em}
+    .file-copy h4{margin:0 0 5px;font:700 17px/1.3 "Manrope",sans-serif;color:#fff}
+    .file-copy p{margin:0;color:#9fb6c8;font-size:14px;line-height:1.5}
+    .file-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border-radius:10px;background:var(--teal);color:#03231f;font-size:14px;font-weight:800;white-space:nowrap}
+    .file-link:hover,.file-link:focus{background:var(--teal-2)}
+    .timeline{position:relative;margin-top:12px}
+    .timeline:before{content:"";position:absolute;left:167px;top:12px;bottom:12px;width:1px;background:var(--line)}
+    .role{display:grid;grid-template-columns:140px 1fr;gap:58px;padding:34px 0;border-bottom:1px solid var(--line);position:relative}
+    .role:last-child{border-bottom:0}
+    .role:after{content:"";position:absolute;left:161px;top:43px;width:13px;height:13px;background:var(--teal);border:4px solid #fff;border-radius:50%;box-shadow:0 0 0 1px var(--line)}
+    .role-date{font-weight:700;color:var(--teal);font-size:14px;padding-top:5px}
+    .role h3{font-size:23px;color:var(--navy)}
+    .role .company{color:#536b7f;font-weight:600;margin:5px 0 12px}
+    .role p{color:var(--muted);margin:0;max-width:780px}
+    .tools{background:var(--soft)}
+    .tool-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tool-group{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px}
+    .tool-group h3{font-size:17px;color:var(--navy);margin-bottom:16px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid var(--line);border-radius:10px;padding:8px 11px;color:#496074;font-size:14px;background:#fbfdfe}
+    .contact{padding:84px 0;background:#fff}
+    .contact-box{background:linear-gradient(135deg,var(--navy),#0e3656);color:#fff;border-radius:28px;padding:58px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;box-shadow:var(--shadow)}
+    .contact-box h2{color:#fff}
+    .contact-box p{color:#bed0dd;font-size:18px;max-width:650px;margin:18px 0 0}
+    .contact-actions{display:grid;gap:12px;justify-self:end;min-width:250px}
+    .contact-actions .button{width:100%}
+    .print{background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff}
+    .print:hover{background:rgba(255,255,255,.09)}
+    .site-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media (max-width:900px){
+      .nav-links a:not(.nav-cta){display:none}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding:88px 0 120px}.hero-card{justify-self:start;width:100%;max-width:360px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.section-head,.about-grid,.contact-box{grid-template-columns:1fr;gap:28px}.cap-grid,.tool-groups{grid-template-columns:repeat(2,1fr)}.contact-actions{justify-self:start}.projects,.file-grid{grid-template-columns:1fr}.samples-head{align-items:start;flex-direction:column;gap:8px}
+    }
+    @media (max-width:620px){
+      .wrap{width:min(calc(100% - 28px),var(--max))}.nav-inner{height:66px}.nav-cta{min-height:40px;padding:0 14px}.brand span{display:none}.hero-grid{padding:70px 0 115px}.hero-copy{font-size:18px}.stats{margin-top:-48px}.stat{padding:22px 18px}.stat b{font-size:23px}section{padding:78px 0}.section-head{margin-bottom:34px}.panel{padding:26px}.cap-grid,.tool-groups{grid-template-columns:1fr}.timeline:before,.role:after{display:none}.role{grid-template-columns:1fr;gap:8px;padding:28px 0}.contact-box{padding:34px 26px}.contact-actions{min-width:0;width:100%}.project{padding:25px;min-height:280px}.file-card{grid-template-columns:auto 1fr}.file-link{grid-column:1/-1;width:100%}
+    }
+    @media print{.nav,.actions,.filter-row,.contact-actions,.hero-art{display:none!important}.hero{min-height:auto;background:var(--navy)}.hero-grid{padding:54px 0}.stats{margin-top:0}.reveal{opacity:1;transform:none}section{padding:48px 0}.project{break-inside:avoid}.contact{padding:40px 0}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Kevin Digal portfolio home"><span class="mark">KD</span><span>Kevin Digal</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#work">Work</a><a href="#experience">Experience</a><a class="nav-cta" href="mailto:kevery56@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero" id="top">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Executive Assistant · Operations · CRM</p>
+          <h1>I keep the work <span>moving.</span></h1>
+          <p class="hero-copy">I’m Kevin Digal, a remote operations and executive support professional helping Australian and U.S. businesses organise priorities, coordinate people, maintain accurate systems, and follow every task through to completion.</p>
+          <div class="actions"><a class="button primary" href="#work">View selected work</a><a class="button secondary" href="mailto:kevery56@gmail.com">Email Kevin</a></div>
+        </div>
+        <aside class="hero-card" aria-label="Current profile">
+          <div class="status"><span class="status-dot"></span>Based in Davao City, Philippines</div>
+          <strong>6+ years</strong>
+          <p>Remote support experience across Australian and North American business hours.</p>
+        </aside>
+      </div>
+    </header>
+
+    <div class="wrap stats" aria-label="Professional highlights">
+      <div class="stats-grid">
+        <div class="stat"><b>AU + US</b><span>International client support</span></div>
+        <div class="stat"><b>CRM</b><span>Clean records and clear next actions</span></div>
+        <div class="stat"><b>Ops</b><span>Scheduling, quotations and follow-ups</span></div>
+        <div class="stat"><b>Sales</b><span>Lead generation and appointment setting</span></div>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">About</div><h2>Reliable support with operational awareness.</h2></div><p class="lead">My work sits where executive support, customer communication, and day-to-day operations meet. I bring structure to moving parts, communicate early, and keep open items visible until they are resolved.</p></div>
+        <div class="about-grid">
+          <article class="panel reveal"><h3>How I support a business</h3><p>I’ve managed shared inboxes, calendars, CRM records, quotations, customer and supplier communication, lead pipelines, operational trackers, invoicing support, reports, and outstanding-job follow-ups. I’m comfortable switching between detailed administrative work and urgent coordination without losing sight of the larger priority.</p></article>
+          <aside class="panel values reveal">
+            <div class="value"><i>01</i><div><b>Clarify</b><span>Confirm the goal, owner, deadline and expected output.</span></div></div>
+            <div class="value"><i>02</i><div><b>Organise</b><span>Make the work visible in the right system or tracker.</span></div></div>
+            <div class="value"><i>03</i><div><b>Follow through</b><span>Close the loop instead of stopping after the first message.</span></div></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Capabilities</div><h2>Practical help where it matters.</h2></div><p class="lead">Support that reduces admin load, improves visibility, and gives leaders more time for decisions that require their attention.</p></div>
+        <div class="cap-grid">
+          <article class="cap reveal"><div class="cap-num">01 / EXECUTIVE SUPPORT</div><h3>Inbox, calendar and priorities</h3><p>Email organisation, scheduling across time zones, meeting preparation, action-item tracking, research and clear executive updates.</p></article>
+          <article class="cap reveal"><div class="cap-num">02 / OPERATIONS</div><h3>Jobs, suppliers and follow-ups</h3><p>Customer and supplier coordination, quotations, job scheduling, outstanding-work tracking and early escalation of blockers.</p></article>
+          <article class="cap reveal"><div class="cap-num">03 / CRM</div><h3>Clean data and next actions</h3><p>Contact maintenance, pipeline updates, activity notes, stage accuracy, follow-up dates, deduplication and reporting.</p></article>
+          <article class="cap reveal"><div class="cap-num">04 / SALES SUPPORT</div><h3>Lead generation and appointments</h3><p>Prospect research, cold and warm outreach, lead qualification, appointment setting, renewals and consistent pipeline follow-up.</p></article>
+          <article class="cap reveal"><div class="cap-num">05 / REPORTING</div><h3>Trackers leaders can trust</h3><p>Excel and Google Sheets trackers, clean summaries, status reporting and source verification before information is shared.</p></article>
+          <article class="cap reveal"><div class="cap-num">06 / CONTENT SUPPORT</div><h3>Clear documents and simple visuals</h3><p>Document formatting, presentation support, Canva graphics, social content assistance and accurate written communication.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Selected work</div><h2>Systems and workflows I’ve supported.</h2></div><p class="lead">Representative projects based on real responsibilities from my remote work. Client-sensitive information has been removed.</p></div>
+        <div class="filter-row reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="operations">Operations</button><button class="filter" data-filter="crm">CRM & Sales</button><button class="filter" data-filter="executive">Executive Support</button>
+        </div>
+        <div class="projects">
+          <article class="project reveal" data-category="operations"><div class="project-top"><span>Australian service business</span><span>Operations</span></div><h3>Job coordination and outstanding-work control</h3><p>Maintained ServiceM8 job records, coordinated customer and supplier communication, prepared quotations, tracked pending work and supported invoicing in Xero.</p><footer><span class="tag">ServiceM8</span><span class="tag">Xero</span><span class="tag">Scheduling</span><span class="tag">Follow-ups</span></footer></article>
+          <article class="project reveal" data-category="crm"><div class="project-top"><span>Local business outreach</span><span>CRM & Sales</span></div><h3>Manchester lead-generation pipeline</h3><p>Researched local service businesses, identified online-presence gaps, organised qualified prospects and maintained outreach status, ownership and next-action fields.</p><footer><span class="tag">Lead Research</span><span class="tag">CRM</span><span class="tag">Google Sheets</span><span class="tag">Outreach</span></footer></article>
+          <article class="project reveal" data-category="executive"><div class="project-top"><span>U.S. business support</span><span>Executive Support</span></div><h3>Inbox, scheduling and follow-through</h3><p>Managed day-to-day administrative requests, communications, appointments and follow-ups while keeping priorities organised for leadership.</p><footer><span class="tag">Google Workspace</span><span class="tag">Calendar</span><span class="tag">Inbox</span><span class="tag">Reporting</span></footer></article>
+          <article class="project reveal" data-category="crm"><div class="project-top"><span>Business development</span><span>Sales Support</span></div><h3>Lead qualification and appointment setting</h3><p>Handled cold and warm outreach, qualified opportunities, updated CRM activity, scheduled appointments and maintained accurate notes for the next conversation.</p><footer><span class="tag">HubSpot</span><span class="tag">GoHighLevel</span><span class="tag">Salesforce</span><span class="tag">Calling</span></footer></article>
+        </div>
+        <div class="samples reveal" aria-labelledby="portfolio-files-title">
+          <div class="samples-head"><div><div class="kicker">Portfolio files</div><h3 id="portfolio-files-title">View the actual work samples.</h3></div><p>Open the PDF portfolios in your browser or download the spreadsheet workbook. All examples have been prepared for professional review.</p></div>
+          <div class="file-grid">
+            <article class="file-card"><div class="file-icon" aria-hidden="true">PDF</div><div class="file-copy"><h4>Operations &amp; CRM Work Portfolio</h4><p>Lead generation, CRM management, executive support and operational workflow samples.</p></div><a class="file-link" href="assets/portfolio/kevin-digal-work-portfolio.pdf" target="_blank" rel="noopener">View PDF</a></article>
+            <article class="file-card"><div class="file-icon" aria-hidden="true">XLSX</div><div class="file-copy"><h4>Reports &amp; Spreadsheet Samples</h4><p>Practical examples of reporting, trackers, data organisation and spreadsheet work.</p></div><a class="file-link" href="assets/portfolio/reports-spreadsheet-project-samples.xlsx" download>Download</a></article>
+            <article class="file-card"><div class="file-icon" aria-hidden="true">PDF</div><div class="file-copy"><h4>Document &amp; Social Media Portfolio</h4><p>Document layouts, Canva designs and social media content samples.</p></div><a class="file-link" href="assets/portfolio/document-social-portfolio.pdf" target="_blank" rel="noopener">View PDF</a></article>
+            <article class="file-card"><div class="file-icon" aria-hidden="true">PDF</div><div class="file-copy"><h4>Happy 2 Help Social Content Notes</h4><p>Sample content planning, copy ideas and structured notes for branded social posts.</p></div><a class="file-link" href="assets/portfolio/happy2help-social-content-notes.pdf" target="_blank" rel="noopener">View PDF</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Experience</div><h2>Built through service, sales and operations.</h2></div><p class="lead">A career shaped by high-volume customer conversations, remote coordination, accurate systems and consistent follow-through.</p></div>
+        <div class="timeline">
+          <article class="role reveal"><div class="role-date">2020 — 2026</div><div><h3>Business Development & Inside Sales Specialist</h3><div class="company">Happy 2 Help · Remote</div><p>Supported U.S. and Australian accounts across executive administration, lead generation, appointment setting, shared inboxes, quotations, CRM integrity, supplier follow-ups, reporting and operational coordination.</p></div></article>
+          <article class="role reveal"><div class="role-date">2017</div><div><h3>Australian Client & Executive Support</h3><div class="company">Godfrey Pembroke Australia / Bishop Group</div><p>Supported estate-planning coordination, Personal CFO Service client calls and executive-level administrative communication in a professional-services environment.</p></div></article>
+          <article class="role reveal"><div class="role-date">2015 — 2019</div><div><h3>Sales & Customer Service Specialist</h3><div class="company">Teleperformance · Davao City</div><p>Handled high-volume customer calls, resolved account concerns, recommended appropriate products, processed sales and maintained accurate interaction records against service and sales targets.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools" id="tools">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Tools</div><h2>Comfortable across modern workflows.</h2></div><p class="lead">I learn new systems quickly and use the right tool to keep information organised, visible and actionable.</p></div>
+        <div class="tool-groups">
+          <div class="tool-group reveal"><h3>Communication & productivity</h3><div class="chips"><span class="chip">Google Workspace</span><span class="chip">Microsoft 365</span><span class="chip">Slack</span><span class="chip">Teams</span><span class="chip">Zoom</span><span class="chip">WhatsApp</span></div></div>
+          <div class="tool-group reveal"><h3>CRM & operations</h3><div class="chips"><span class="chip">HubSpot</span><span class="chip">Salesforce</span><span class="chip">GoHighLevel</span><span class="chip">ServiceM8</span><span class="chip">Xero</span><span class="chip">Airtable</span></div></div>
+          <div class="tool-group reveal"><h3>Projects & content</h3><div class="chips"><span class="chip">ClickUp</span><span class="chip">Asana</span><span class="chip">Monday.com</span><span class="chip">Trello</span><span class="chip">Canva</span><span class="chip">WordPress</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-box reveal"><div><div class="kicker">Let’s work together</div><h2>Need someone who keeps track of the details?</h2><p>I’m open to Executive Assistant, Operations Coordinator, CRM, and business-support opportunities with international teams.</p></div><div class="contact-actions"><a class="button primary" href="mailto:kevery56@gmail.com">kevery56@gmail.com</a><button class="button print" type="button" onclick="window.print()">Save portfolio as PDF</button></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Kevin Digal</span><span>Davao City, Philippines · Available for remote work</span></div></footer>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const filters=[...document.querySelectorAll('.filter')];
+    const projects=[...document.querySelectorAll('.project')];
+    filters.forEach(button=>button.addEventListener('click',()=>{
+      filters.forEach(item=>item.classList.remove('active'));button.classList.add('active');
+      const target=button.dataset.filter;
+      projects.forEach(project=>project.classList.toggle('hidden',target!=='all'&&project.dataset.category!==target));
+    }));
+  </script>
+</body>
+</html>
